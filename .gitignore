@@ -56,6 +56,16 @@ yarn-error.log
 # Bundle artifact
 *.jsbundle
 
+# Build output
+output/
+*.apk
+
+# Android build assets
+android/app/src/main/assets/index.android.bundle
+android/app/src/main/assets/index.android.bundle.meta
+android/app/src/main/res/drawable-*/node_modules_*
+android/app/src/main/res/raw/
+
 # Ruby / CocoaPods
 **/Pods/
 /vendor/bundle/
@@ -73,3 +83,11 @@ yarn-error.log
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# Android 签名文件
+android/app/release.keystore
+android/keystore.properties
+
+# Python
+__pycache__/
+*.py[cod]

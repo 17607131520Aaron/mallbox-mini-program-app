@@ -20,14 +20,7 @@ module.exports = {
     },
     createDefaultProgram: true,
   },
-  plugins: [
-    '@typescript-eslint',
-    'react',
-    'react-hooks',
-    'jest',
-    'prettier',
-    'import',
-  ],
+  plugins: ['@typescript-eslint', 'react', 'react-hooks', 'jest', 'prettier', 'import'],
   rules: {
     // Prettier 规则
     'prettier/prettier': ['warn', {}, { usePrettierrc: true }],
@@ -40,10 +33,7 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'react/no-unstable-nested-components': ['warn', { allowAsProps: true }],
-    'react/jsx-curly-brace-presence': [
-      'warn',
-      { props: 'never', children: 'never' },
-    ],
+    'react/jsx-curly-brace-presence': ['warn', { props: 'never', children: 'never' }],
     'react/jsx-boolean-value': ['warn', 'never'],
     'react/jsx-handler-names': [
       'warn',
@@ -169,16 +159,7 @@ module.exports = {
     'import/order': [
       'warn',
       {
-        groups: [
-          'builtin',
-          'external',
-          'internal',
-          'parent',
-          'sibling',
-          'index',
-          'object',
-          'type',
-        ],
+        groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'type'],
         'newlines-between': 'always',
         alphabetize: {
           order: 'asc',
